@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name ="viewport" content= "width=device-width, initial-scale=1.0">
+<title> CNY Responsive page </title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<header>
+<a href="index.html" class="logo">CNY<span>.</span></a>
+<div class="menuToggle" onclick="toggleMenu();"></div>
+  <ul class="navigation" onclick="toggleMenu();">
+      <li><a href="index.html" onclick="toggleMenu();"> Home </a></li>
+      <li><a href="#hours" onclick="toggleMenu();"> Hours & Location </a></li>
+      <li><a href="gal.html" onclick="toggleMenu();"> Gallery </a></li>
+      <li><a href="#about" onclick="toggleMenu();"> Contact Us </a></li>
+  </ul>
+</header>
+
+
+<section class="banner" id="banner">
+  <div class="content">
+    <div class="box">
+    <h2> CNY Elite Barbers</h2>
+  <a  href="tel:315-416-3472" style="font-size: 30px">Phone: (315) 416-3472</a>
+<br><br>
+    <a href="gal.html" class="btn"> Gallery </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+<section class="about" id="hours">
+  <div class="row">
+    <div class="co150">
+      <h2 class="titleText">Hours <span>&</span> Location</h2>
+      <br>
+        <table class="opening-hours-table">
+            <tr id="Monday" itemprop="openingHours" title="Open Monday at 9am to 6pm">
+                <td>Monday</td>
+                <td class="opens">11:00 AM</td>
+                <td>-</td>
+                <td class="closes">7:00 PM</td>
+            </tr>
+            <tr id="Tuesday" itemprop="openingHours" title="Open Tuesday at 9am to 6pm">
+                <td>Tuesday</td>
+                <td class="opens">11:00 AM</td>
+                <td>-</td>
+                <td class="closes">7:00 PM</td>
+            </tr>
+            <tr id="Wednesday" itemprop="openingHours" title="Open Wednesday at 9am to 6pm">
+                <td>Wednesday</td>
+                <td class="opens">11:00 AM</td>
+                <td>-</td>
+                <td class="closes">7:00 PM</td>
+            </tr>
+            <tr id="Thursday" itemprop="openingHours" title="Open Thursday at 9am to 8pm">
+                <td>Thursday</td>
+                <td class="opens">11:00 AM</td>
+                <td>-</td>
+                <td class="closes">7:00 PM</td>
+            </tr>
+            <tr id="Friday" itemprop="openingHours" title="Open Friday at 9am to 6pm">
+                <td>Friday</td>
+                <td class="opens">11:00 AM</td>
+                <td>-</td>
+                <td class="closes">7:00 PM</td>
+            </tr>
+            <tr id="Saturday" itemprop="openingHours" title="Open Saturday at 10am to 6pm">
+                <td>Saturday</td>
+                <td class="opens">11:00 AM</td>
+                <td>-</td>
+                <td class="closes">7:00 PM</td>
+            </tr>
+            <tr id="Sunday" itemprop="openingHours" title="Open Sunday at 11am to 4pm">
+                <td>Sunday</td>
+                <td class="opens">11:00 AM</td>
+                <td>-</td>
+                <td class="closes">7:00 PM</td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="map">
+<div class="co150">
+  <div class="imgBx">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.9934325757445!2d-76.15735128468508!3d43.06260567914597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3a8281a4991%3A0x68bb1d6df39cf5db!2sCNY%20Elite%20Barbers!5e0!3m2!1sen!2sus!4v1653163279426!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+</div>
+</div>
+  </section>
+
+</section>
+<section class="contact" id="about">
+  <div class="title">
+    <h2 class="titleText"><span>C</span>ontact Us</h2>
+    <div class="num">
+    <a  href="tel:315-416-3472" style="font-size: 15px">Call: (315) 416-3472</a>
+  </div>
+    <div class="con">
+      <p style="text-align: center"> or</p>
+  <a href="https://www.instagram.com/cnyelitebarbers/?hl=en" alt=""><img src="instagram.png" alt=""></a>
+  <a href="https://www.facebook.com/CNY-Elite-Barbers-109050470475084/" alt=""> <img src="facebook.png" alt=""></a>
+    <img src="gmail.png" alt="">
+
+</div>
+  </div>
+</section>
+
+
+
+
+
+<script type="text/javascript">
+window.addEventListener('scroll', function(){
+  const header = document.querySelector('header');
+  header.classList.toggle('sticky', window.scrollY > 0);
+});
+
+function toggleMenu(){
+  const menuToggle = document.querySelector('.menuToggle');
+  const navigation = document.querySelector('.navigation');
+  menuToggle.classList.toggle('active');
+  navigation.classList.toggle('active');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name ="viewport" content= "width=device-width, initial-scale=1.0">
+<title> CNY Responsive page </title>
+<link rel="stylesheet" href="style2.css">
+
+</head>
+
+
+<body>
+
+<header>
+<a href="index.html" class="logo">CNY<span>.</span></a>
+<div class="menuToggle" onclick="toggleMenu();"></div>
+  <ul class="navigation" onclick="toggleMenu();">
+      <li><a href="index.html" onclick="toggleMenu();"> Home </a></li>
+      <li><a href="#hours" onclick="toggleMenu();"> Hours & Location </a></li>
+      <li><a href="gal.html" onclick="toggleMenu();"> Gallery </a></li>
+      <li><a href="index.html#about" onclick="toggleMenu();"> Contact Us </a></li>
+  </ul>
+</header>
+
+<div class="title">
+    <h2 class="titleText"><span>G</span>allery</h2>
+    <p>We do all types of hair!</p>
+</div>
+
+
+<div class="container">
+    <div class="boxd">
+
+      <div class="dream">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipOnwvwwvWwVOGoKoa0ZzuZ4Up4fY7T-fc8f5pH3=s1600-w600-h600">
+         <img src="https://lh5.googleusercontent.com/p/AF1QipOdUq310Ph4qsXlOZ9bYB_Npmb84zW8eUJzCtdr=w600-h988-p-k-no">
+          <img src="https://lh5.googleusercontent.com/p/AF1QipP1pLjx9COxm3aiTPlbpWNUElDShFBZadgsN3yt=w600-h988-p-k-no">
+           <img src="https://lh3.googleusercontent.com/p/AF1QipP2oxPpbniNROQebIYJJQ7nUMxv7fOcJmfT1G3T=s1600-w600-h600">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOUWQIOG7z-qXJtzwDYmcbZlGBr5n9xH76fWyi4=s1600-w600-h600">
+              <img src="https://lh5.googleusercontent.com/p/AF1QipNEmWN8OotMzJrMz2qgIkKYQGlDS0RS-VJFf91t=w600-h485-p-k-no">
+
+      </div>
+
+        <div class="dream">
+        <img src="https://lh5.googleusercontent.com/p/AF1QipOrUyfGu6ov_jpiZPMpu8m74F_aZdQS2YOQJNqs=w600-h988-p-k-no">
+         <img src="https://lh5.googleusercontent.com/p/AF1QipMdAdKxFDuA6C1sTsgMwoC649ZuP-ftC3rF7GbS=w600-h485-p-k-no">
+          <img src="https://lh5.googleusercontent.com/p/AF1QipOBWht8hGG-QHXq-I7A8cZ8477vlK_qGeyoGspY=w600-h988-p-k-no">
+           <img src="https://lh5.googleusercontent.com/p/AF1QipPRAfKrDjVHBAwDiMV-WYMJMVmy7whDifkFStKC=w600-h988-p-k-no">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipM3hM4DCAIk7R34BU8S5jzS-0JAdC-0WBXKb_p_=s1600-w600-h600">
+
+      </div>
+
+        <div class="dream">
+        <img src="https://lh5.googleusercontent.com/p/AF1QipNDOpfCzcfiI5Hio5TYVeuULgRnBnDGEemds9nT=w600-h988-p-k-no">
+         <img src="https://lh5.googleusercontent.com/p/AF1QipPcbCqWgdjXumgBld4pGRO1Pf09Y3XN8G5PHOfY=w600-h988-p-k-no">
+          <img src="https://lh5.googleusercontent.com/p/AF1QipPG1UiFgrETGkw3vGBiSsZOY608sQRDtAyU8b7d=w600-h988-p-k-no">
+           <img src="https://lh5.googleusercontent.com/p/AF1QipPzw_-YThGljeyCwxAtMQLa7QrojNX7-QixMdtn=w600-h988-p-k-no">
+            <img src="https://lh5.googleusercontent.com/p/AF1QipOto60bnflXvB5lz8ZRhsI-Jp2NAKJvxJ-YJTo-=w600-h988-p-k-no">
+
+      </div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+window.addEventListener('scroll', function(){
+  const header = document.querySelector('header');
+  header.classList.toggle('sticky', window.scrollY > 0);
+});
+
+function toggleMenu(){
+  const menuToggle = document.querySelector('.menuToggle');
+  const navigation = document.querySelector('.navigation');
+  menuToggle.classList.toggle('active');
+  navigation.classList.toggle('active');
+}
+</script>
+</body>
+</html>
