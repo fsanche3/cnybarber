@@ -143,7 +143,7 @@ header .navigation li a{
 }
 
 .section{
-  padding-left: 40px;
+  padding-left: 20px;
   padding-top: 20px;
 }
 
@@ -187,7 +187,7 @@ height: 100%;
   border-radius:6px;
   box-shadow: 0 0 4px black;
   padding: 30px;
-  width: 75%;
+  width: 96%;
   align-content:  center;
 
 }
@@ -248,7 +248,7 @@ height: 100%;
   header .navigation li a{
     text-decoration: none;
     color: #111;
-    font-size: 1.6em;
+    font-size: 2.2em;
 
   }
   .menuToggle
@@ -274,8 +274,13 @@ height: 100%;
     filter: invert(1);
   }
   section{
-    padding: 20px;
+    padding-top: 0px;
     width: 100%;
+  }
+  .section{
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .banner .content h2
   {
@@ -285,26 +290,43 @@ height: 100%;
   .row{
     flex-direction: column;
   }
-.row .co150
-{
-  position: relative;
+.row .co150{
+   position: relative;
   width: 100%;
-
 }
 .row .co150 .imgBx
 {
   height: 300px;
   margin-top: 20px;
+  position: relative;
+  width: 100vh;
 }
+html, body{
+  max-width: 100%;
+overflow-x: hidden;
+}
+
+.map iframe{
+    left:0;
+    top:0;
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
+}
+
 .contact
 {
-  margin-top: 100px;
+  margin-top: 25px;
 }
 .title{
     text-align: center;
   }
 .titleText
 {
+  text-align: center;
   font-size: 1.8em;
   line-height: 1.5em;
   margin-bottom: 15px;
@@ -318,7 +340,6 @@ height: 100%;
 .map iframe{
   width: 85%;
 }
-
 
 }
 @@media (max-width: 480px)
