@@ -293,6 +293,7 @@ height: 100%;
   header.sticky
   {
     padding: 10px 20px;
+    width: 97%;
   }
   header .navigation
   {
