@@ -332,6 +332,8 @@ height: 100%;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    padding-right: 30px;
+    filter: invert(1);
   }
   .menuToggle.active
   {
