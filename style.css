@@ -124,6 +124,7 @@ color: #ff9514;
 header .navigation{
   position: relative;
   display: flex;
+  padding-right: 16px;
 }
 
 header .navigation li {
