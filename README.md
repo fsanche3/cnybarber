@@ -6,3 +6,5 @@ by github pages. Its also responsive on all screens sizes.
 - HTML 
 - CSS 
 - JavaScript
+## Link 
+--> https://cnyelitebarbershop.github.io/_/
